@@ -1,0 +1,13 @@
+# Copy this file to ~/.config/hypr/autostart-personal.conf to enable it.
+# These are the personal app autostarts captured from the desktop setup.
+
+exec-once = discord
+exec-once = whatsdesk
+exec-once = spotify
+exec-once = obsidian
+exec-once = brave
+exec-once = firefox
+
+# Adjust or remove these machine-local entries before enabling them.
+# exec-once = $HOME/.local/bin/tendo
+# exec-once = openrgb --startminimized --profile "purpke.orp"

@@ -1,0 +1,9 @@
+# Copy this file to ~/.config/hypr/env-nvidia.conf to enable it.
+# Keep this disabled on non-NVIDIA systems.
+
+env = LIBVA_DRIVER_NAME,nvidia
+env = XDG_SESSION_TYPE,wayland
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = NVD_BACKEND,direct
+
