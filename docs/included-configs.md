@@ -20,7 +20,10 @@
 - `configs/swaync/icons/*`
 - `configs/gtk-3.0/settings.ini`
 - `configs/gtk-4.0/settings.ini`
+- `configs/nwg-look/config`
+- `configs/xsettingsd/xsettingsd.conf`
 - `configs/home/.gtkrc-2.0`
+- `configs/home/.local/share/icons/default/index.theme`
 - `assets/backgrounds/*`
 - `assets/wlogout/assets/*`
 - `assets/themes/Catppuccin-Mocha.tar.xz`
@@ -65,4 +68,4 @@
 - Personal autostarts are moved into an opt-in example file.
 - NVIDIA env overrides are moved into an opt-in example file.
 - Wlogout icon paths are now relative so they install cleanly on any username.
-
+- GTK4 theme symlinks are recreated by the installer instead of being stored as absolute links in the repo.

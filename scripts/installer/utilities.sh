@@ -14,6 +14,7 @@ install_pacman_packages \
     cliphist \
     libnotify \
     pamixer \
+    pavucontrol \
     playerctl \
     swaync \
     thunar \
@@ -39,4 +40,3 @@ install_path "$BASE_DIR/assets/wlogout/assets" "$TARGET_HOME/.config/wlogout/ass
 chmod +x "$TARGET_HOME/.config/waybar/scripts/gpu.sh"
 chmod +x "$TARGET_HOME/.config/waybar/scripts/storage.sh"
 chown "$INSTALL_USER:$INSTALL_USER" "$TARGET_HOME/.config/waybar/scripts/gpu.sh" "$TARGET_HOME/.config/waybar/scripts/storage.sh"
-
