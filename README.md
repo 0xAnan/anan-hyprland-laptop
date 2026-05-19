@@ -10,6 +10,15 @@ cd ~/anan-hyprland-laptop/scripts/installer
 sudo bash install.sh
 ```
 
+## Shell-Only Install
+
+If Hyprland is already set up on the laptop and you only want your terminal stack:
+
+```bash
+cd ~/anan-hyprland-laptop/scripts/installer
+sudo bash shell.sh
+```
+
 ## What This Repo Installs By Default
 
 - Hyprland, Hyprlock, Hypridle
@@ -26,6 +35,14 @@ sudo bash install.sh
 - NVIDIA-specific environment overrides
 - Legacy Dunst config
 - Personal apps like Brave, Discord, Obsidian, Spotify, WhatsDesk, VS Code, OpenRGB
+
+## Shell Stack
+
+The shell-only installer applies these three pieces:
+
+- `~/.zshrc`
+- `~/.config/starship/starship.toml`
+- shell dependencies: `zsh`, `starship`, `fzf`, `zsh-autosuggestions`, `zoxide`, `thefuck`, `bat`, `eza`
 
 ## Laptop Adaptation
 

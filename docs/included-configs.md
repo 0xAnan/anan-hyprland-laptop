@@ -35,6 +35,25 @@
 - `configs/hypr/autostart-personal.conf.example`
 - `configs/hypr/env-nvidia.conf.example`
 - `configs/dunst/dunstrc`
+- `configs/zsh/.zshrc`
+- `configs/starship/starship.toml`
+
+## Shell-Only Pieces
+
+- `configs/zsh/.zshrc`
+- `configs/starship/starship.toml`
+- installer: `scripts/installer/shell.sh`
+
+### Shell dependency set
+
+- `zsh`
+- `starship`
+- `fzf`
+- `zsh-autosuggestions`
+- `zoxide`
+- `thefuck`
+- `bat`
+- `eza`
 
 ## Personal Behavior Captured
 

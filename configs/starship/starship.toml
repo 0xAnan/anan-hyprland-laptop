@@ -1,0 +1,52 @@
+format = """
+$username \
+[ ]( fg:#a3aed2)\
+$hostname( fg:#a3aed2)\
+$directory\
+$python\
+$time\
+\n$character"""
+
+[directory]
+style = "fg:#a3aed2"
+format = '''[ \[$path\] ]($style)'''
+truncation_length = 4
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙"
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"www" = "󰖟 "
+"HackTheBox" = '󰆧 '
+"VPNs" = "󰖂 "
+"Arsenal" = "󰞇 "
+"Coding" = " " 
+"FahemSec" = "󰧑 "
+"CTFs" = " "
+
+[time]
+disabled = true
+time_format = "%R" # Hour:Minute Format
+style = "bg:#1d2230"
+format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold)'
+
+
+[username]
+style_user = 'white bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[python]
+disabled = false
+symbol = '👾 '
+pyenv_version_name = true
+format = '[(${version} )(\($virtualenv\) )]($style)'
