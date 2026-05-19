@@ -19,6 +19,15 @@ cd ~/anan-hyprland-laptop/scripts/installer
 sudo bash shell.sh
 ```
 
+## Neovim-Only Install
+
+If you only want your Neovim setup:
+
+```bash
+cd ~/anan-hyprland-laptop/scripts/installer
+sudo bash nvim.sh
+```
+
 ## What This Repo Installs By Default
 
 - Hyprland, Hyprlock, Hypridle
@@ -43,6 +52,16 @@ The shell-only installer applies these three pieces:
 - `~/.zshrc`
 - `~/.config/starship/starship.toml`
 - shell dependencies: `zsh`, `starship`, `fzf`, `zsh-autosuggestions`, `zoxide`, `thefuck`, `bat`, `eza`
+
+## Neovim Stack
+
+The Neovim installer applies:
+
+- `~/.config/nvim`
+- dependencies: `neovim`, `git`, `ripgrep`, `fd`, `tree-sitter-cli`, `wl-clipboard`, `xclip`
+- optional helpers: `stylua`, `lua-language-server`
+
+This is an NvChad-based config, so the first `nvim` launch will bootstrap `lazy.nvim`, NvChad, and the plugin set automatically.
 
 ## Laptop Adaptation
 

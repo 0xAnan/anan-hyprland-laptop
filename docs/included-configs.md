@@ -37,6 +37,7 @@
 - `configs/dunst/dunstrc`
 - `configs/zsh/.zshrc`
 - `configs/starship/starship.toml`
+- `configs/nvim/*`
 
 ## Shell-Only Pieces
 
@@ -54,6 +55,29 @@
 - `thefuck`
 - `bat`
 - `eza`
+
+## Neovim Pieces
+
+- `configs/nvim/init.lua`
+- `configs/nvim/lazy-lock.json`
+- `configs/nvim/lua/**/*`
+- `configs/nvim/.stylua.toml`
+- installer: `scripts/installer/nvim.sh`
+
+### Neovim dependency set
+
+- `neovim`
+- `git`
+- `ripgrep`
+- `fd`
+- `tree-sitter-cli`
+- `wl-clipboard`
+- `xclip`
+
+### Optional Neovim helpers
+
+- `stylua`
+- `lua-language-server`
 
 ## Personal Behavior Captured
 
