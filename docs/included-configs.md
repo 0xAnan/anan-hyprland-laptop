@@ -38,6 +38,8 @@
 - `configs/zsh/.zshrc`
 - `configs/starship/starship.toml`
 - `configs/nvim/*`
+- `configs/byobu/*`
+- `configs/tmux/*`
 
 ## Shell-Only Pieces
 
@@ -78,6 +80,36 @@
 
 - `stylua`
 - `lua-language-server`
+
+## Tmux Pieces
+
+- `configs/byobu/.tmux.conf`
+- `configs/byobu/backend`
+- `configs/byobu/color`
+- `configs/byobu/color.tmux`
+- `configs/byobu/datetime.tmux`
+- `configs/byobu/keybindings`
+- `configs/byobu/keybindings.tmux`
+- `configs/byobu/profile`
+- `configs/byobu/profile.tmux`
+- `configs/byobu/prompt`
+- `configs/byobu/status`
+- `configs/byobu/statusrc`
+- `configs/byobu/windows`
+- `configs/byobu/windows.tmux`
+- `configs/tmux/vpn_ip.sh`
+- installer: `scripts/installer/tmux.sh`
+
+### Tmux dependency set
+
+- `tmux`
+- `byobu`
+- `wl-clipboard`
+- `xclip`
+
+### Note
+
+- This repo does not contain a standalone `~/.tmux.conf` because your current tmux workflow is based on `byobu` using the tmux backend.
 
 ## Personal Behavior Captured
 

@@ -28,6 +28,15 @@ cd ~/anan-hyprland-laptop/scripts/installer
 sudo bash nvim.sh
 ```
 
+## Tmux-Only Install
+
+If you only want your tmux setup:
+
+```bash
+cd ~/anan-hyprland-laptop/scripts/installer
+sudo bash tmux.sh
+```
+
 ## What This Repo Installs By Default
 
 - Hyprland, Hyprlock, Hypridle
@@ -62,6 +71,22 @@ The Neovim installer applies:
 - optional helpers: `stylua`, `lua-language-server`
 
 This is an NvChad-based config, so the first `nvim` launch will bootstrap `lazy.nvim`, NvChad, and the plugin set automatically.
+
+## Tmux Stack
+
+Your tmux setup here is actually a `byobu` configuration on top of tmux.
+
+The tmux installer applies:
+
+- `~/.config/byobu`
+- `~/.config/tmux/vpn_ip.sh`
+- dependencies: `tmux`, `byobu`, `wl-clipboard`, `xclip`
+
+Launch it with:
+
+```bash
+byobu-tmux
+```
 
 ## Laptop Adaptation
 

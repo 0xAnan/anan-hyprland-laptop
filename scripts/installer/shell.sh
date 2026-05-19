@@ -26,6 +26,10 @@ if ask_confirmation "Install the Neovim setup too?"; then
     bash "$BASE_DIR/scripts/installer/nvim.sh"
 fi
 
+if ask_confirmation "Install the tmux/byobu setup too?"; then
+    bash "$BASE_DIR/scripts/installer/tmux.sh"
+fi
+
 if ask_confirmation "Set zsh as the default shell for $INSTALL_USER?"; then
     chsh -s /bin/zsh "$INSTALL_USER"
     print_success "Default shell changed to zsh for $INSTALL_USER."
