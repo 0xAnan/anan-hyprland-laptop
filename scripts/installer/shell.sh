@@ -26,7 +26,7 @@ if ask_confirmation "Install the Neovim setup too?"; then
     bash "$BASE_DIR/scripts/installer/nvim.sh"
 fi
 
-if ask_confirmation "Install the tmux/byobu setup too?"; then
+if ask_confirmation "Install the tmux setup too?"; then
     bash "$BASE_DIR/scripts/installer/tmux.sh"
 fi
 

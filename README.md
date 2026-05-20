@@ -74,19 +74,20 @@ This is an NvChad-based config, so the first `nvim` launch will bootstrap `lazy.
 
 ## Tmux Stack
 
-Your tmux setup here is actually a `byobu` configuration on top of tmux.
-
 The tmux installer applies:
 
-- `~/.config/byobu`
+- `~/.tmux.conf`
 - `~/.config/tmux/vpn_ip.sh`
-- dependencies: `tmux`, `byobu`, `wl-clipboard`, `xclip`
+- TPM at `~/.tmux/plugins/tpm`
+- dependencies: `tmux`, `git`, `wl-clipboard`, `xclip`
 
 Launch it with:
 
 ```bash
-byobu-tmux
+tmux
 ```
+
+This tmux config was copied from your current `/etc/tmux.conf` and adapted so it reloads from `~/.tmux.conf` on the laptop.
 
 ## Laptop Adaptation
 
